@@ -10,7 +10,7 @@ You can generate an image using Stable Diffusion and edit with CSG. Note that `p
 python src/edit_synthetic_images.py \
     --results_folder "output/synth_edit" \
     --prompt_str "a high resolution painting of a cat eating a hamburger" \
-    --task "cat2squirrel" 
+    --task "cat2squirrel" \
     --random_seed 0 \
     --mask_res 16 --posterior_guidance 5.0
 ```
