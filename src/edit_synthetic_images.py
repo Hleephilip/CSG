@@ -36,7 +36,7 @@ if __name__=="__main__":
     parser.add_argument('--negative_guidance_scale', default=5.0, type=float)
     parser.add_argument('--use_float_16', action='store_true')
     parser.add_argument('--mask_res', type=int, default=16)
-    parser.add_argument('--posterior_guidance', default=0.1, type=float)
+    parser.add_argument('--posterior_guidance', default=10.0, type=float)
     parser.add_argument('--mixup_type', default=['cross-attention', 'noise'], type=List[str])
 
     args = parser.parse_args()
