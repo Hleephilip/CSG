@@ -15,6 +15,8 @@ python src/edit_synthetic_images.py \
     --mask_res 16 --posterior_guidance 5.0
 ```
 
+Synthesized and edited images are saved in `output/synth_edit` directory.
+
 ### Edit real images
 
 You can edit a real image with CSG. First, do the DDIM inversion using the command :
