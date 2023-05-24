@@ -66,7 +66,7 @@ Reconstructed image from DDIM inversion is saved in `reconstruction/`, and edite
 
 ### Visualize cross-attention maps
 
-You can save and visualize cross-attention maps using synthetic images. Firstly, run `save_attention_synth.py` to save the cross-attention map:
+You can save and visualize cross-attention maps using synthetic images. Firstly, run `save_attention_synth.py` to save the cross-attention maps:
 
 ```
 python src/save_attention_synth.py \
