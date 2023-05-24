@@ -1,4 +1,4 @@
-# CSG
+# Conditional Score Guidance for Text-Driven Image-to-Image Translation
 
 Implementation of "Conditional Score Guidance for Text-Driven Image-to-Image Translation".
 
