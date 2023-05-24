@@ -31,8 +31,8 @@ Then, perform image editing.
 
 ```
 python src/edit_real_images.py \
-    --inversion "output/test_cat/inversion/cat_1.pt" \
-    --prompt "output/test_cat/prompt/cat_1.txt" \
+    --inversion "output/test_cat/inversion/cat.pt" \
+    --prompt "output/test_cat/prompt/cat.txt" \
     --task_name "cat2dog" \
     --results_folder "output/test_cat/" \
     --mask_res 16 --posterior_guidance 15.0
