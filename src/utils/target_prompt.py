@@ -5,7 +5,7 @@ import numpy as np
 def cos_sim(x1: torch.tensor, x2: torch.tensor) -> torch.tensor:
     return torch.dot(x1, x2) / (torch.norm(x1) * torch.norm(x2))
 
-def make_target_prompt(prompt_str: str, src_word: str, tgt_word: str, src_word_features, model, device) -> str:
+def make_target_prompt(prompt_str: str, src_word: str, tgt_word: str, src_word_features, model, device):
     src_prompt_split = prompt_str.split()
     try :
         idx = src_prompt_split.index(src_word)
