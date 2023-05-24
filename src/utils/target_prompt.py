@@ -26,4 +26,4 @@ def make_target_prompt(prompt_str: str, src_word: str, tgt_word: str, src_word_f
             src_prompt_split[idx] = src_prompt_split[idx].replace(src_word, tgt_word)
             
         tgt_prompt = " ".join(src_prompt_split)
-    return tgt_prompt
+    return tgt_prompt, idx
