@@ -193,10 +193,7 @@ class EditingPipeline(BasePipeline):
             self.save_map(d_ref_t2attn, save_path, "CAM_src")
             with open(os.path.join(save_path, "prompt_src.txt"), 'w') as f:
                 f.write(prompt)
-
-            with open(os.path.join(save_path, "prompt_tgt.txt"), 'w') as f:
-                f.write(tgt_prompt)
-
+                
             print(f"Saved to {save_path}")
 
         if save_only:
