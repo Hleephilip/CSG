@@ -1,5 +1,5 @@
 torch
-diffusers==0.13.1
+diffusers==0.12.1
 transformers
 salesforce-lavis
 openai-clip
