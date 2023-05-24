@@ -38,7 +38,7 @@ python src/edit_real_images.py \
     --mask_res 16 --posterior_guidance 10.0
 ```
 
-After all, files at directory `output/text_cat` is like:
+After all, files at directory `output/test_cat` is like:
 
 ```
 output/test_cat
