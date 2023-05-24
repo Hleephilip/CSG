@@ -66,7 +66,7 @@ if __name__=="__main__":
     src_word_features = model.encode_text(tokenized_src_word)
 
     prompt_str = args.prompt_str
-    tgt_prompt = make_target_prompt(prompt_str, src_word, tgt_word, src_word_features, model, device)    
+    tgt_prompt, idx = make_target_prompt(prompt_str, src_word, tgt_word, src_word_features, model, device)    
     print(prompt_str, '->', tgt_prompt)
     
     rec_pil, edit_pil, mask_target, mask_target_no_self = pipe(

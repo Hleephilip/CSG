@@ -69,7 +69,7 @@ if __name__=="__main__":
 
     for inv_path, prompt_path in zip(l_inv_paths, l_prompt_paths):
         prompt_str = open(prompt_path).read().strip()
-        tgt_prompt = make_target_prompt(prompt_str, src_word, tgt_word, src_word_features, model, device)
+        tgt_prompt, idx = make_target_prompt(prompt_str, src_word, tgt_word, src_word_features, model, device)
 
         print(prompt_str, '->', tgt_prompt)
         x_T = torch.load(inv_path).unsqueeze(0)
