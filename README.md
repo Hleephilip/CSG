@@ -25,7 +25,7 @@ python src/inversion.py \
     --results_folder "output/test_cat"
 ```
 
-Then, edit perform image editing.
+Then, perform image editing. Note that `posterior_guidance` is a hyperparamter related to guidance scale.
 
 ```
 python src/edit_real_ours_v8_abalation.py \
@@ -33,10 +33,10 @@ python src/edit_real_ours_v8_abalation.py \
     --prompt "output/test_cat/prompt/" \
     --task_name "cat2dog" \
     --results_folder "output/test_cat/" \
-    --mask_res 16 --posterior_guidance 15
+    --mask_res 16 --posterior_guidance 10
 ```
 
-After editing, files at directory `output/text_cat` is like:
+After all, files at directory `output/text_cat` is like:
 
 ```
 output/test_cat
@@ -69,3 +69,6 @@ Refer to [requirements.txt](https://github.com/frogyunmax/CSG/blob/main/requirem
 ```
 pip install -r requirements.txt
 ```
+### Acknowledgements
+
+This method is implemented based on [pix2pix-zero](https://github.com/pix2pixzero/pix2pix-zero/).
