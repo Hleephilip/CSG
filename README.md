@@ -28,7 +28,7 @@ python src/inversion.py \
 Then, perform image editing. 
 
 ```
-python src/edit_real_ours_v8_abalation.py \
+python src/edit_real_images.py \
     --inversion "output/test_cat/inversion/" \
     --prompt "output/test_cat/prompt/" \
     --task_name "cat2dog" \
