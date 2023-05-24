@@ -4,7 +4,7 @@ Implementation of "Conditional Score Guidance for Text-Driven Image-to-Image Tra
 
 ### Edit synthetic images
 
-You can generate an image using Stable Diffusion and edit with CSG.
+You can generate an image using Stable Diffusion and edit with CSG. Note that `posterior_guidance` is a hyperparamter related to guidance scale.
 
 ```
 python src/edit_synthetic_images.py \
@@ -25,7 +25,7 @@ python src/inversion.py \
     --results_folder "output/test_cat"
 ```
 
-Then, perform image editing. Note that `posterior_guidance` is a hyperparamter related to guidance scale.
+Then, perform image editing. 
 
 ```
 python src/edit_real_ours_v8_abalation.py \
