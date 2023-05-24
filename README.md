@@ -35,7 +35,7 @@ python src/edit_real_images.py \
     --prompt "output/test_cat/prompt/cat_1.txt" \
     --task_name "cat2dog" \
     --results_folder "output/test_cat/" \
-    --mask_res 16 --posterior_guidance 10.0
+    --mask_res 16 --posterior_guidance 15.0
 ```
 
 After all, files at directory `output/test_cat` is like:
