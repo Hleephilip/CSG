@@ -194,7 +194,7 @@ class EditingPipeline(BasePipeline):
             with open(os.path.join(save_path, "prompt_src.txt"), 'w') as f:
                 f.write(prompt)
 
-            with open(os.path.join(save_path "prompt_tgt.txt"), 'w') as f:
+            with open(os.path.join(save_path, "prompt_tgt.txt"), 'w') as f:
                 f.write(tgt_prompt)
 
             print(f"Saved to {save_path}")
