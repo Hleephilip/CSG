@@ -43,22 +43,22 @@ After all, files at directory `output/test_cat` are like this:
 ```
 output/test_cat
   ├── inversion
-  │   ├── cat_1.pt
+  │   ├── cat.pt
   │   └── ...
   ├── prompt
-  │   ├── cat_1.txt
+  │   ├── cat.txt
   │   └── ...
   ├── edit
-  │   ├── cat_1.png
+  │   ├── cat.png
   │   └── ...
   ├── mask_no_attn
-  │   ├── cat_1.png
+  │   ├── cat.png
   │   └── ...
   ├── mask
-  │   ├── cat_1.png
+  │   ├── cat.png
   │   └── ...
   └── reconstruction
-      ├── cat_1.png
+      ├── cat.png
       └── ...
  ```
  
