@@ -12,7 +12,7 @@ python src/edit_synthetic_images.py \
     --prompt_str "a high resolution painting of a cat eating a hamburger" \
     --task "cat2squirrel" 
     --random_seed 0 \
-    --posterior_guidance 5.0
+    --mask_res 16 --posterior_guidance 5.0
 ```
 
 ### Edit real images
@@ -33,7 +33,7 @@ python src/edit_real_ours_v8_abalation.py \
     --prompt "output/test_cat/prompt/" \
     --task_name "cat2dog" \
     --results_folder "output/test_cat/" \
-    --mask_res 16 --posterior_guidance 10
+    --mask_res 16 --posterior_guidance 10.0
 ```
 
 After all, files at directory `output/text_cat` is like:
