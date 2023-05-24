@@ -9,7 +9,7 @@ from diffusers.schedulers.scheduling_ddim import DDIMSchedulerOutput
 from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
 sys.path.insert(0, "src/utils")
 from base_pipeline import BasePipeline
-from cross_attention import prep_unet
+from cross_attention import prep_unet_my_cross_self
 
 if torch.cuda.is_available():
     device = "cuda"
@@ -31,7 +31,7 @@ class DDIMInversion(BasePipeline):
     ):
         
         # 0. modify the unet to be useful :D
-        self.unet = prep_unet(self.unet)
+        self.unet = prep_unet_my_cross_self(self.unet)
 
         device = self._execution_device
         do_classifier_free_guidance = guidance_scale > 1.0
