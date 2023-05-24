@@ -55,7 +55,7 @@ def save_attention():
     tgt_prompt, idx = make_target_prompt(prompt_str, src_word, tgt_word, src_word_features, model, device)    
     print(prompt_str, '->', tgt_prompt)
     
-    rec_pil, edit_pil = pipe(
+    rec_pil, edit_pil, _, _ = pipe(
         prompt = args.prompt_str,
         tgt_prompt = tgt_prompt,
         num_inference_steps=args.num_ddim_steps,
