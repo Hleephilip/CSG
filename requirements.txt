@@ -1,0 +1,8 @@
+torch
+diffusers==0.13.1
+transformers
+salesforce-lavis
+openai-clip
+accelerate
+Pillow==9.1.0
+einops
