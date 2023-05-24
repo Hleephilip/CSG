@@ -80,7 +80,7 @@ python src/save_attention_synth.py \
 Then, run `visualize_attention.py` to visualize the saved cross-attention map:
 
 ```
-python src/visualize_attention.py
+python src/visualize_attention.py --save_path "attention_map"
 ```
 
 ### Requirements
