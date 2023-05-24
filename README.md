@@ -12,7 +12,7 @@ python src/edit_synthetic_images.py \
     --prompt_str "a high resolution painting of a cat eating a hamburger" \
     --task "cat2squirrel" \
     --random_seed 0 \
-    --mask_res 16 --posterior_guidance 5.0
+    --mask_res 16 --posterior_guidance <GUIDANCE_SCALE>
 ```
 
 Synthesized and edited images are saved in `output/synth_edit` directory.
@@ -35,7 +35,7 @@ python src/edit_real_images.py \
     --prompt "output/test_cat/prompt/cat.txt" \
     --task_name "cat2dog" \
     --results_folder "output/test_cat/" \
-    --mask_res 16 --posterior_guidance 15.0
+    --mask_res 16 --posterior_guidance <GUIDANCE_SCALE>
 ```
 
 After all, files at directory `output/test_cat` is like:
@@ -74,7 +74,7 @@ python src/save_attention_synth.py \
     --prompt_str "a high resolution painting of a cat eating a hamburger" \
     --task "cat2squirrel" \
     --random_seed 0 \
-    --mask_res 16 --posterior_guidance 5.0 \
+    --mask_res 16 --posterior_guidance <GUIDANCE_SCALE> \
     --save_path "attention_map"
 ```
 Then, run `visualize_attention.py` to visualize the saved cross-attention map:
