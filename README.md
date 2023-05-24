@@ -4,7 +4,7 @@ Implementation of "Conditional Score Guidance for Text-Driven Image-to-Image Tra
 
 ### Edit synthetic images
 
-You can generate an image using Stable Diffusion and edit with CSG. Note that `posterior_guidance` is a hyperparamter related to guidance scale.
+You can generate an image using Stable Diffusion and edit it with CSG. Note that `posterior_guidance` is a hyperparameter related to guidance scale.
 
 ```
 python src/edit_synthetic_images.py \
@@ -38,7 +38,7 @@ python src/edit_real_images.py \
     --mask_res 16 --posterior_guidance <GUIDANCE_SCALE>
 ```
 
-After all, files at directory `output/test_cat` is like:
+After all, files at directory `output/test_cat` are like this:
 
 ```
 output/test_cat
@@ -62,7 +62,7 @@ output/test_cat
       └── ...
  ```
  
-Reconstructed image from DDIM inversion is saved in `reconstruction/`, and edited image is in `edit/` directory. You can also check content mask in `mask_no_attn/` and smoothed content mask in `mask/`.
+Reconstructed image from DDIM inversion is saved in `reconstruction/`, and edited image is in `edit/` directory. You can also check the content mask in `mask_no_attn/` and smoothed content mask in `mask/`.
 
 ### Visualize cross-attention maps
 
@@ -90,6 +90,6 @@ Refer to requirements.txt.
 ```
 pip install -r requirements.txt
 ```
-### Acknowledgements
+### Acknowledgments
 
 This method is implemented based on [pix2pix-zero](https://github.com/pix2pixzero/pix2pix-zero/) and [prompt-to-prompt](https://github.com/google/prompt-to-prompt).
