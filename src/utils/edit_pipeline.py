@@ -198,7 +198,7 @@ class EditingPipeline(BasePipeline):
 
         if save_only:
             print("Stopping loop")
-            return image_rec, None
+            return image_rec, None, None, None
         
         mask_target = sum(mask_target_t_list) / len(mask_target_t_list)
         mask_target = mask_target.to(device)
