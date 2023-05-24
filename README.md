@@ -63,7 +63,26 @@ output/test_cat
  ```
  
 Reconstructed image from DDIM inversion is saved in `reconstruction/`, and edited image is in `edit/` directory. You can also check content mask in `mask_no_attn/` and smoothed content mask in `mask/`.
-      
+
+### Visualize cross-attention maps
+
+You can save and visualize cross-attention maps using synthetic images. Firstly, run `save_attention_synth.py` to save the cross-attention map:
+
+```
+python src/save_attention_synth.py \
+    --results_folder "output/synth_edit" \
+    --prompt_str "a high resolution painting of a cat eating a hamburger" \
+    --task "cat2squirrel" \
+    --random_seed 0 \
+    --mask_res 16 --posterior_guidance 5.0 \
+    --save_path "attention_map"
+```
+Then, run `visualize_attention.py` to visualize the saved cross-attention map:
+
+```
+python src/visualize_attention.py
+```
+
 ### Requirements
 
 Refer to requirements.txt.
@@ -73,4 +92,4 @@ pip install -r requirements.txt
 ```
 ### Acknowledgements
 
-This method is implemented based on [pix2pix-zero](https://github.com/pix2pixzero/pix2pix-zero/).
+This method is implemented based on [pix2pix-zero](https://github.com/pix2pixzero/pix2pix-zero/) and [prompt-to-prompt](https://github.com/google/prompt-to-prompt).
