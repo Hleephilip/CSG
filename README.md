@@ -66,7 +66,7 @@ Reconstructed image from DDIM inversion is saved in `reconstruction/`, and edite
       
 ### Requirements
 
-Refer to [requirements.txt](https://github.com/frogyunmax/CSG/blob/main/requirements.txt)
+Refer to requirements.txt.
 
 ```
 pip install -r requirements.txt
