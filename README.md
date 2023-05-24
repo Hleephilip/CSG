@@ -36,6 +36,32 @@ python src/edit_real_ours_v8_abalation.py \
     --mask_res 16 --posterior_guidance 15
 ```
 
+After editing, files at directory `output/text_cat` is like:
+
+```
+output/test_cat
+  ├── inversion
+  │   ├── cat_1.pt
+  │   └── ...
+  ├── prompt
+  │   ├── cat_1.txt
+  │   └── ...
+  ├── edit
+  │   ├── cat_1.png
+  │   └── ...
+  ├── mask_no_attn
+  │   ├── cat_1.png
+  │   └── ...
+  ├── mask
+  │   ├── cat_1.png
+  │   └── ...
+  └── reconstruction
+      ├── cat_1.png
+      └── ...
+ ```
+ 
+Reconstructed image from DDIM inversion is saved in `reconstruction/`, and edited image is in `edit/` directory. You can also check content mask in `mask_no_attn/` and smoothed content mask in `mask/`.
+      
 ### Requirements
 
 Refer to [requirements.txt](https://github.com/frogyunmax/CSG/blob/main/requirements.txt)
