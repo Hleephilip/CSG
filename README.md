@@ -2,6 +2,11 @@
 
 Implementation of "Conditional Score Guidance for Text-Driven Image-to-Image Translation".
 
+### Colab Demo
+
+Open `demo.ipynb` in Google Colab.
+
+
 ### Edit synthetic images
 
 You can generate an image using Stable Diffusion and edit it with CSG. Note that `posterior_guidance` is a hyperparameter related to guidance scale.
